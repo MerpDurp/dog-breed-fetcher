@@ -34,7 +34,7 @@ public class DogApiBreedFetcher implements BreedFetcher {
                 subBreeds.add(jsonArray.getString(i));
             }
         }
-        catch (IOException e) {
+        catch (Exception e) {
             throw new BreedNotFoundException(breed);
         }
 
